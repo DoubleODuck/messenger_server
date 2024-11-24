@@ -1,0 +1,22 @@
+[package]
+name = "test_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = { version = "4.9.0", features = ["openssl"] }
+actix-ws = "0.3.0"
+chrono = "0.4.38"
+env_logger = "0.11.5"
+futures-util = "0.3.31"
+json = "0.12.4"
+jsonwebtoken = "9.3.0"
+log = "0.4.22"
+openssl = "0.10.68"
+serde = { version = "1.0.215", features = ["derive"] }
+sqlx = { version = "0.8.2", features = ["chrono", "postgres", "uuid", "macros", "runtime-tokio-rustls"] }
+tokio = { version = "1.41.1", features = ["full"] }
+update = "0.0.0"
+uuid = { version = "1.11.0", features = ["serde", "v4"] }
